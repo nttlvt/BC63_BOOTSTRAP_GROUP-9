@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.p{
+    font-size:18px;
+    font-weight:600;
+    line-height:30px;
+    letter-spacing:1px;
+    color:#7e7d7d;
+    margin-bottom:0px;
+}
+.h2{
+    font-size:35px;
+    line-height:45px;
+    font-weight:600;
+    color:#3f3a64;
+}
+.p__smail{
+    font-size:17;
+    line-height:27px;
+    color:rgb(102, 102, 102,0.8);
+    margin:20px 0;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid rgba(231, 231, 231, 0.18);
+    display:fixed;
+}
+
+.header__icon p {
+    font-size: 14px;
+}
+
+.nav-item a {
+    color: white;
+    opacity: 0.8;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+.header__search .fa-solid {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+
+}
+
+.dropdown .dropdown-menu {
+    background-color: black;
+
+}
+
+.nav-link:focus, .nav-link:hover {
+    opacity: 1;
+    color: white;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    opacity: 1;
+    color: white;
+    background-color: #00000000;
+}
+
+/* END HEADER */
+
+/* CAROUSEL */
+.carousel .bg1 {
+    background: url('https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: top;
+    height: 100vh;
+
+}
+
+.carousel .bg2 {
+    background-image: url('https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: top;
+    height: 100vh;
+
+}
+
+.carousel .bg3 {
+    background-image: url('https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: top;
+    height: 100vh;
+
+}
+
+.carousel .bg4 {
+    background-image: url('https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: top;
+    height: 100vh;
+
+}
+
+.carousel__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.carousel__overlay {
+    position: absolute;
+    background-color: rgba(29, 42, 55, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.carousel__content .container {
+    padding-right: 365px;
+}
+
+.carousel__content h2 {
+    font-size: 65px;
+    line-height: 1.1;
+    max-width: 800;
+    font-weight: 600;
+}
+
+.carousel__content p {
+    font-size: 20px;
+    padding-right: 190px;
+}
+
+.carousel .shape {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* #carouselExampleFade .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: black;
+    z-index: 10;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.carousel .carousel-control-prev {
+    top:300px;
+    right: 0px;
+}
+
+.carousel-control-next {
+    right: 0px;
+} */
+
+/* END CAROUSEL */
+
+/* ABOUT US */
+.about{
+    margin:200px;
+}
+.about__content ul {
+    list-style: none;
+}
+
+.about__content ol, ul{
+    padding:0px;
+
+}
+.about__content ul{
+
+} 
+.about__content li{
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+}
+.about__content ul a{
+    text-decoration:none;
+}
+.about__content{
+    width:70%;
+}
+.about__img{
+    width:30%;
+}
+.about__content i{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    text-align:center;
+    line-height: 16px;
+    font-size:10px;
+    background-color:#009f4d;
+    color:white;    
+    margin-right:10px;
+}
+.about__content span{
+    font-size:18px;
+    font-weight:600;
+    color:#3f3a64;
+    line-height:28px;
+}
+.about__left img{
+    display:block;
+    width:100%;
+    border-radius:12px;
+}
+.about__right{
+    margin-top:30px;
+}
+.about__right img{
+    display: block;
+    width:100%;
+    padding:10px;
+    border-radius:20px;
+}
+.about__img{
+    max-width:50%;
+}
+/* END ABOUT US */
