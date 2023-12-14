@@ -5,34 +5,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corpvision</title>
-    
-    <!-- BOOTSTRAP VERSION 4.6-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-
+    <!-- BOOTSTRAP VERSION 5.1.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- MY STYLE -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="content d-flex justify-content-between align-items-center pt-3">
+                <h1 class="header__icon">
+                    <a href="#" class="text-decoration-none text-white">
+                        <i class="fa-solid fa-align-right text-success fs-4 w-30px h-29.6px"></i>
+                        <span class="fs-2">
+                            Corp Vision
+                            <p class="text-center ms-4">Vision to your Future</p>
+                        </span>
+                    </a>
+                </h1>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link #000" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">PAGE</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                            <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+                            <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                            <li><a class="dropdown-item" href="#">ELEMENTS PAGE</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="header__item d-flex align-items-center">
+                    <div class="header__search">
+                        <i class="fa-solid fa-magnifying-glass me-3 rounded-circle bg-success font-bold"></i>
+                    </div>
+                    <div class="header__sun">
+                        <i class="fa-regular fa-sun fs-2 text-white "></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
     <!-- END HEADER -->
 
     <!-- CAROUSEL -->
+    <section class="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active bg1">
+                    <div class="carousel__content ">
+                        <div class="container">
+                            <h2 class="animate__animated animate__flipInX animate__delay-1s">We will solve your issues
+                                our
+                                vision to your future</h2>
+                            <p class="fs-5 my-4 animate__fadeInDown animate__animated ">Lorem ipsum dolor sit amet,
+                                elit,
+                                sed do eiusmod ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                            <button
+                                class="btn btn-success px-5 py-3 fw-bold animate__animated animate__fadeInUp animate__delay-1s">Learn
+                                More</button>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
+                <div class="carousel-item bg3">
+                    <div class="carousel__content ">
+                        <div class="container">
+                            <h2 class="animate__fadeInDown animate__animated animate__delay-1s">Embracing success do our
+                                best, need best advice</h2>
+                            <p class="fs-5 my-4 animate__fadeInDown animate__animated">Lorem ipsum dolor sit amet, elit,
+                                sed
+                                do eiusmod ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                            <button
+                                class="btn btn-success px-5 py-3 fw-bold animate__fadeInDown animate__animated animate__delay-1s">Getting
+                                Started</button>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
+                <div class="carousel-item bg4">
+                    <div class="carousel__content ">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInUp animate__delay-1s">Digital transformation
+                                driven
+                                by technology</h2>
+                            <p class="fs-5 my-4 animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, elit,
+                                sed
+                                do eiusmod ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                            <button
+                                class="btn btn-success px-5 py-3 fw-bold  animate__fadeInDown animate__animated animate__delay-1s">Learn
+                                More</button>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
+                <div class="carousel-item bg2">
+                    <div class="carousel__content ">
+                        <div class="container">
+                            <h2 class="animate__animated animate__flipInX animate__delay-1s">For those who believe in
+                                leaving a mark</h2>
+                            <p class="fs-5 my-4  animate__fadeInDown animate__animated">Lorem ipsum dolor sit amet,
+                                elit,
+                                sed do eiusmod ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.</p>
+                            <button
+                                class="btn btn-success px-5 py-3 fw-bold animate__animated animate__fadeInUp animate__delay-1s">Contact
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="carousel__overlay"></div>
+                </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+        <div class="shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+                <path fill-opacity="1">
+                    <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                        values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                                                                                                                  M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+                </path>
+            </svg>
+        </div>
+    </section>
 
     <!-- END CAROUSEL -->
 
     <!-- ABOUT -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about__content col">
+                    <p class="p">
+                        ABOUT US
+                    </p>
+                    <h2 class="h2">
+                        We make the best strategies for you, Enhancing your success
+                    </h2>
+                    <p class="p__smail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore
+                        et
+                        dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.
+                    </p>
+                    <ul class="">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-check me-2"></i>
+                                <span>UI/UX Design and Development</span>
+                            </a>
 
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-check me-2"></i>
+                                <span>Branding Design and Identity</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Mobile App Design and Development</span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__img col">
+                    <div class="row">
+                        <div class="about__left col-6">
+                            <img src="./image/a.jpg" alt="a">
+                        </div>
+                        <div class="about__right col-6">
+                            <img src="./image/c1.jpg" alt="c1">
+                            <img src="./image/c4.jpg" alt="c4">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- END ABOUT -->
 
     <!-- PRODUCT -->
+
     <!-- END PRODUCT -->
 
     <!-- SERVICE -->
@@ -58,11 +268,11 @@
 
 
     <!-- BOOTSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <!-- MY JAVA SCRIPT -->
     <script src="./js/javascript.js"></script>
